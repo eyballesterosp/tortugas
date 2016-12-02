@@ -12,6 +12,8 @@ public class Antena extends Thread {
     }
 
     public void run() {
+        
+        turtle.penWidth(2);
         turtle.setPenColor(Color.black);
         turtle.left(90);
         for (int i = 0; i < 26; i++) {

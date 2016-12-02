@@ -13,14 +13,16 @@ public class Cabeza extends Thread {
 
     public void run() {
         turtle.right(90);
+        turtle.penWidth(5);
         ojo(turtle);
         turtle.penUp();
         turtle.forward(98);
         turtle.penDown();
         ojo(turtle);
-        turtle.setPos(-68, 161);
+        turtle.penWidth(4);turtle.setPos(-68, 161);
         rectangle(turtle);
         turtle.setPos(-40, 83);
+        turtle.penWidth(2);
         boca(turtle);
         turtle.hideTurtle();
 
@@ -53,7 +55,7 @@ public class Cabeza extends Thread {
     }
 
     private void ojo(Turtle t) {
-
+        
         turtle.setPenColor(Color.black);
         for (int i = 0; i < 20; i++) {
             t.forward(4);

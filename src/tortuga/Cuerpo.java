@@ -12,6 +12,7 @@ public class Cuerpo extends Thread {
     }
 
     public void run() {
+        turtle.penWidth(4);
         turtle.speed(110);
         turtle.right(90);
         turtle.setPenColor(Color.black);
@@ -20,17 +21,20 @@ public class Cuerpo extends Thread {
         turtle.right(90);
         turtle.back(35);
         rectangle(turtle, 90, 160, 160);
+        turtle.penWidth(3);
         turtle.setPos(-65, 25);
         turtle.right(90);
         rectangle(turtle, 90, 130, 30);
         turtle.penUp();
         turtle.back(55);
         turtle.penDown();
+        turtle.penWidth(1);
         name(turtle);
         turtle.hideTurtle();
     }
 
     private void name(Turtle t) {
+        
         Y(t);
         t.penUp();
         t.forward(35);
@@ -51,23 +55,23 @@ public class Cuerpo extends Thread {
         t.right(90);
         t.forward(7);
         t.right(90);
-        t.forward(15);
+        t.forward(14);
         t.left(90);
         t.forward(6);
         t.left(90);
-        t.forward(15);
+        t.forward(14);
         t.right(90);
-        t.forward(20);
+        t.forward(21);
         t.right(90);
         t.forward(25);
         t.right(90);
         t.forward(7);
         t.right(90);
-        t.forward(15);
+        t.forward(14);
         t.left(90);
         t.forward(6);
         t.left(90);
-        t.forward(15);
+        t.forward(14);
         t.right(90);
         t.forward(21);
         t.right(90);

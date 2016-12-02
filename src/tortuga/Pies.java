@@ -12,6 +12,8 @@ public class Pies extends Thread {
     }
 
     public void run() {
+        
+        turtle.penWidth(2);
         turtle.setPenColor(Color.black);
         piernaIzq(turtle);
         turtle.penUp();
