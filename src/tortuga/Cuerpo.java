@@ -71,6 +71,7 @@ public class Cuerpo extends Thread {
         t.forward(15);
         t.right(90);
         t.forward(21);
+        t.right(90);
     }
 
     private void E(Turtle t) {
