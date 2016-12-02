@@ -43,7 +43,6 @@ public class Cuerpo extends Thread {
         t.penUp();
         t.forward(35);
         t.penDown();
-        t.right(90);
         S(t);
     }
 
