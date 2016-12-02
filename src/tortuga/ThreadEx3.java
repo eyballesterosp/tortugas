@@ -12,17 +12,20 @@ public class ThreadEx3 extends TurtleFrame
         Turtle hilo2 = new Turtle(this, Color.blue);
         Turtle hilo3 = new Turtle(this, Color.red);
 //        Turtle hilo4 = new Turtle(this, Color.green);
+        Turtle hilo5 = new Turtle(this, Color.green);
         
         hilo1.setPos(0,180);
         hilo2.setPos(-50, 140);
         hilo3.setPos(-45, 71);
         //hilo4.setPos(-65, -30);
+        hilo5.setPos(-30,-109);
         
         //new Cuadrado(hilo1).start();
         new Antena(hilo1).start();
         new Cabeza(hilo2).start();
         new Cuerpo(hilo3).start();
         //new Brazo(hilo4).start();
+        new Pies(hilo5).start();
     }
 
 
